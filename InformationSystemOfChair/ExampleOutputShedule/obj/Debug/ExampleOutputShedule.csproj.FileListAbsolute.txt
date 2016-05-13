@@ -1,0 +1,10 @@
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\ExampleOutputShedule.exe.config
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\ExampleOutputShedule.exe
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\ExampleOutputShedule.pdb
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\InformationSystemOfChair.Entity.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\EntityFramework.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\InformationSystemOfChair.Entity.pdb
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\bin\Debug\EntityFramework.xml
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\obj\Debug\ExampleOutputShedule.exe
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\obj\Debug\ExampleOutputShedule.pdb
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\ExampleOutputShedule\obj\Debug\ExampleOutputShedule.csprojResolveAssemblyReference.cache

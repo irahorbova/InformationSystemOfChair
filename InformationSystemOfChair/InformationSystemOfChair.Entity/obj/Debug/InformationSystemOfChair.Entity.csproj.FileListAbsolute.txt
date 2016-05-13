@@ -1,0 +1,8 @@
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\bin\Debug\InformationSystemOfChair.Entity.dll.config
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\bin\Debug\InformationSystemOfChair.Entity.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\bin\Debug\InformationSystemOfChair.Entity.pdb
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\bin\Debug\EntityFramework.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\bin\Debug\EntityFramework.xml
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\obj\Debug\InformationSystemOfChair.Entity.csprojResolveAssemblyReference.cache
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\obj\Debug\InformationSystemOfChair.Entity.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair.Entity\obj\Debug\InformationSystemOfChair.Entity.pdb

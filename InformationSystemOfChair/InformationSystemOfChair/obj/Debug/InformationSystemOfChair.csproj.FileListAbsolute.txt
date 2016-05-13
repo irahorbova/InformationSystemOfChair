@@ -1,0 +1,4 @@
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\InformationSystemOfChair.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\InformationSystemOfChair.pdb
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.dll
+D:\Artem\Programming\Іра Курсова\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.pdb
