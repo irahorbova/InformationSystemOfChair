@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_information_system_of_chair_model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Institute">
+    <Key>
+      <PropertyRef Name="InstituteID" />
+    </Key>
+    <Property Name="InstituteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InstituteGroup">
+    <Key>
+      <PropertyRef Name="InstituteGroupID" />
+    </Key>
+    <Property Name="InstituteGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="InstituteID" Type="int" />
+  </EntityType>
+  <EntityType Name="Professor">
+    <Key>
+      <PropertyRef Name="ProfessorID" />
+    </Key>
+    <Property Name="ProfessorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Shedule">
+    <Key>
+      <PropertyRef Name="SheduleID" />
+    </Key>
+    <Property Name="SheduleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstituteGroup" Type="int" />
+    <Property Name="ClassNumber" Type="int" Nullable="false" />
+    <Property Name="DayOfWeek" Type="int" Nullable="false" />
+    <Property Name="ClassName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ClassRoom" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ProfessorID" Type="int" />
+    <Property Name="IsNumerator" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Institute__Insti__1273C1CD">
+    <End Role="Institute" Type="Self.Institute" Multiplicity="0..1" />
+    <End Role="InstituteGroup" Type="Self.InstituteGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institute">
+        <PropertyRef Name="InstituteID" />
+      </Principal>
+      <Dependent Role="InstituteGroup">
+        <PropertyRef Name="InstituteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shedule__Institu__173876EA">
+    <End Role="InstituteGroup" Type="Self.InstituteGroup" Multiplicity="0..1" />
+    <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InstituteGroup">
+        <PropertyRef Name="InstituteGroupID" />
+      </Principal>
+      <Dependent Role="Shedule">
+        <PropertyRef Name="InstituteGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shedule__Profess__182C9B23">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="ProfessorID" />
+      </Principal>
+      <Dependent Role="Shedule">
+        <PropertyRef Name="ProfessorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_information_system_of_chair_modelStoreContainer">
+    <EntitySet Name="Institute" EntityType="Self.Institute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InstituteGroup" EntityType="Self.InstituteGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Professor" EntityType="Self.Professor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Shedule" EntityType="Self.Shedule" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Institute__Insti__1273C1CD" Association="Self.FK__Institute__Insti__1273C1CD">
+      <End Role="Institute" EntitySet="Institute" />
+      <End Role="InstituteGroup" EntitySet="InstituteGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shedule__Institu__173876EA" Association="Self.FK__Shedule__Institu__173876EA">
+      <End Role="InstituteGroup" EntitySet="InstituteGroup" />
+      <End Role="Shedule" EntitySet="Shedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shedule__Profess__182C9B23" Association="Self.FK__Shedule__Profess__182C9B23">
+      <End Role="Professor" EntitySet="Professor" />
+      <End Role="Shedule" EntitySet="Shedule" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

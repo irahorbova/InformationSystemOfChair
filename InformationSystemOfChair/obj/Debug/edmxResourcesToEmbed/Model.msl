@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_information_system_of_chair_modelStoreContainer" CdmEntityContainer="db_information_system_of_chair">
+    <EntitySetMapping Name="Institutes">
+      <EntityTypeMapping TypeName="db_information_system_of_chair_model.Institute">
+        <MappingFragment StoreEntitySet="Institute">
+          <ScalarProperty Name="InstituteID" ColumnName="InstituteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstituteGroups">
+      <EntityTypeMapping TypeName="db_information_system_of_chair_model.InstituteGroup">
+        <MappingFragment StoreEntitySet="InstituteGroup">
+          <ScalarProperty Name="InstituteGroupID" ColumnName="InstituteGroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InstituteID" ColumnName="InstituteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Professors">
+      <EntityTypeMapping TypeName="db_information_system_of_chair_model.Professor">
+        <MappingFragment StoreEntitySet="Professor">
+          <ScalarProperty Name="ProfessorID" ColumnName="ProfessorID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shedules">
+      <EntityTypeMapping TypeName="db_information_system_of_chair_model.Shedule">
+        <MappingFragment StoreEntitySet="Shedule">
+          <ScalarProperty Name="SheduleID" ColumnName="SheduleID" />
+          <ScalarProperty Name="InstituteGroup" ColumnName="InstituteGroup" />
+          <ScalarProperty Name="ClassNumber" ColumnName="ClassNumber" />
+          <ScalarProperty Name="DayOfWeek" ColumnName="DayOfWeek" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="ClassRoom" ColumnName="ClassRoom" />
+          <ScalarProperty Name="ProfessorID" ColumnName="ProfessorID" />
+          <ScalarProperty Name="IsNumerator" ColumnName="IsNumerator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

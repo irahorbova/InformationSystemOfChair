@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_information_system_of_chair_model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Institute">
+    <Key>
+      <PropertyRef Name="InstituteID" />
+    </Key>
+    <Property Name="InstituteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="InstituteGroups" Relationship="Self.FK__Institute__Insti__1273C1CD" FromRole="Institute" ToRole="InstituteGroup" />
+  </EntityType>
+  <EntityType Name="InstituteGroup">
+    <Key>
+      <PropertyRef Name="InstituteGroupID" />
+    </Key>
+    <Property Name="InstituteGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="InstituteID" Type="Int32" />
+    <NavigationProperty Name="Institute" Relationship="Self.FK__Institute__Insti__1273C1CD" FromRole="InstituteGroup" ToRole="Institute" />
+    <NavigationProperty Name="Shedules" Relationship="Self.FK__Shedule__Institu__173876EA" FromRole="InstituteGroup" ToRole="Shedule" />
+  </EntityType>
+  <EntityType Name="Professor">
+    <Key>
+      <PropertyRef Name="ProfessorID" />
+    </Key>
+    <Property Name="ProfessorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Shedules" Relationship="Self.FK__Shedule__Profess__182C9B23" FromRole="Professor" ToRole="Shedule" />
+  </EntityType>
+  <EntityType Name="Shedule">
+    <Key>
+      <PropertyRef Name="SheduleID" />
+    </Key>
+    <Property Name="SheduleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstituteGroup" Type="Int32" />
+    <Property Name="ClassNumber" Type="Int32" Nullable="false" />
+    <Property Name="DayOfWeek" Type="Int32" Nullable="false" />
+    <Property Name="ClassName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ClassRoom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProfessorID" Type="Int32" />
+    <Property Name="IsNumerator" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="InstituteGroup1" Relationship="Self.FK__Shedule__Institu__173876EA" FromRole="Shedule" ToRole="InstituteGroup" />
+    <NavigationProperty Name="Professor" Relationship="Self.FK__Shedule__Profess__182C9B23" FromRole="Shedule" ToRole="Professor" />
+  </EntityType>
+  <Association Name="FK__Institute__Insti__1273C1CD">
+    <End Role="Institute" Type="Self.Institute" Multiplicity="0..1" />
+    <End Role="InstituteGroup" Type="Self.InstituteGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institute">
+        <PropertyRef Name="InstituteID" />
+      </Principal>
+      <Dependent Role="InstituteGroup">
+        <PropertyRef Name="InstituteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shedule__Institu__173876EA">
+    <End Role="InstituteGroup" Type="Self.InstituteGroup" Multiplicity="0..1" />
+    <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InstituteGroup">
+        <PropertyRef Name="InstituteGroupID" />
+      </Principal>
+      <Dependent Role="Shedule">
+        <PropertyRef Name="InstituteGroup" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shedule__Profess__182C9B23">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="ProfessorID" />
+      </Principal>
+      <Dependent Role="Shedule">
+        <PropertyRef Name="ProfessorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_information_system_of_chair" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Institutes" EntityType="Self.Institute" />
+    <EntitySet Name="InstituteGroups" EntityType="Self.InstituteGroup" />
+    <EntitySet Name="Professors" EntityType="Self.Professor" />
+    <EntitySet Name="Shedules" EntityType="Self.Shedule" />
+    <AssociationSet Name="FK__Institute__Insti__1273C1CD" Association="Self.FK__Institute__Insti__1273C1CD">
+      <End Role="Institute" EntitySet="Institutes" />
+      <End Role="InstituteGroup" EntitySet="InstituteGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shedule__Institu__173876EA" Association="Self.FK__Shedule__Institu__173876EA">
+      <End Role="InstituteGroup" EntitySet="InstituteGroups" />
+      <End Role="Shedule" EntitySet="Shedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shedule__Profess__182C9B23" Association="Self.FK__Shedule__Profess__182C9B23">
+      <End Role="Professor" EntitySet="Professors" />
+      <End Role="Shedule" EntitySet="Shedules" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

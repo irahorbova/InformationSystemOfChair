@@ -1,0 +1,17 @@
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\InformationSystemOfChair.exe.config
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.csprojResolveAssemblyReference.cache
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.Properties.Resources.resources
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.csproj.GenerateResource.Cache
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\InformationSystemOfChair.exe
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\InformationSystemOfChair.pdb
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\EntityFramework.dll
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\EntityFramework.xml
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.exe
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.pdb
+c:\users\mm13\documents\visual studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.Form1.resources
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.TwitterMessageUserControl.resources
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\HtmlAgilityPack.dll
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\bin\Debug\HtmlAgilityPack.xml
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.NuwmNewsUserControl.resources
+C:\Users\MM13\Documents\Visual Studio 2015\Projects\InformationSystemOfChair\InformationSystemOfChair\obj\Debug\InformationSystemOfChair.NuwmArticleForm.resources

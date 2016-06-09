@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InformationSystemOfChair.Form1">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAiAAABgAACCAgFACQAAAAgAAAAEYAAAAABg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.InstituteGroupRepository">
+    <Position X="10.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstituteGroupRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.db_information_system_of_chair">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAgQEAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Institute">
+    <Position X="5.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAwAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Institute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.InstituteGroup">
+    <Position X="8" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACQAAAAAQABAAAAAAAIAAAA=</HashCode>
+      <FileName>InstituteGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Professor">
+    <Position X="10.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAEAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Professor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Shedule">
+    <Position X="10.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACEAAAAAAAAAEiAEAAAAAAAAAAEAAAQAAA=</HashCode>
+      <FileName>Shedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.NuwmArticleForm">
+    <Position X="0.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAACAAoACAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NuwmArticleForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.NuwmNews">
+    <Position X="3.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAEAAAAAAAIAAAAAAAAABCAAAAAAAAAA=</HashCode>
+      <FileName>NuwmNews.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.NuwmNewsParser">
+    <Position X="5.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAAAAAAAAAAgAAAAAAAEAEAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>NuwmNewsParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.NuwmNewsUserControl">
+    <Position X="8" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAaAAAAAFBACAAoAKAAIAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>NuwmNewsUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.ProfessorRepository">
+    <Position X="0.5" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProfessorRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Program">
+    <Position X="3.25" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.SheduleRepository">
+    <Position X="0.5" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>SheduleRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Twitter">
+    <Position X="3.25" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAQAAAA=</HashCode>
+      <FileName>Twitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.TwitterMessageUserControl">
+    <Position X="5.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAACACAAgACAAQAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>TwitterMessageUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.TwitterPost">
+    <Position X="8" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAADAAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>TwitterPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Properties.Resources">
+    <Position X="5.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InformationSystemOfChair.Properties.Settings">
+    <Position X="8" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
